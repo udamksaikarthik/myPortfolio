@@ -20,6 +20,7 @@ body{
 .main_container{
     width: 95%;
     margin-top: 1em;
+    overflow-x: hidden;
 }
 .header_container{
     display: flex;
