@@ -197,7 +197,7 @@ body{
     width: 296px;
     height: 100%;
     margin: 1em;
-    background-image: url('/static/Images/PortfolioBackgroundPicture.jpeg');
+    background-image: url('Images/PortfolioBackgroundPicture.jpeg');
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
