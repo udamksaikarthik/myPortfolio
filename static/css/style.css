@@ -172,7 +172,6 @@ body{
     font-size: 1.5em;
     text-decoration: none;
     color: black;
-    transition: 0.5s linear;
 }
 .menu_options_anchor_container:hover{
     background-color: black;
@@ -244,7 +243,7 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-.skills_container_header_title{
+.skills_container_header_title,.journey_container_header_title{
     text-align: center;
     font-size: 3em;
 }
@@ -309,19 +308,104 @@ body{
     background-position: center;
     background-size: 100%;
 }
-.skill_logo{
+.skill_logo,.journey_logo{
     width: 100px;
     height: 100px;
     margin-bottom: 5px;
     background-repeat: no-repeat;
 }
-.my_grip_on_skill{
+.my_grip_on_skill,.journeyPercentage,.journeyName,.journeyYear{
     width: 90%;
     font-size: 1.1em;
     text-align: center;
     font-weight: bold;
 }
-
+.journey_container_parent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.journey_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.each_journey_details_common{
+    width: 40%;
+}
+.each_journey_line_common{
+    width: 10%;
+}
+.journey_common{
+    position: relative;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: crimson; */
+}
+.journey_startLine{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+    height: 50%;
+    width: 3%;
+    background-color: black;
+}
+.journey_middleLine{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 110%;
+    width: 3%;
+    background-color: black;
+}
+.journey_startLine_pointBall{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 10%;
+    width: 15%;
+    border-radius: 50%;
+    background-color: black;
+}
+.journey_school_logo{
+    background: url('Images/school.png');
+    background-position: center;
+    background-size: 100%;
+}
+.journey_inter_logo{
+    background: url('Images/inter.png');
+    background-position: center;
+    background-size: 100%;
+}
+.journey_college_logo{
+    background: url('Images/college.png');
+    background-position: center;
+    background-size: 100%;
+}
+.journey_elements{
+    padding: 5px 0;
+}
+.schoolDetails{
+    align-items: flex-start;
+}
+.schoolName,.schoolYear,.schoolPercentage,.collegeName,.collegeYear,.collegePercentage{
+    text-align: start;
+}
+.interDetails{
+    align-items: flex-end;
+}
+.interName,.interYear,.interPercentage{
+    text-align: end;
+}
 
 @media screen and (max-width: 450px) {
     .inline_menu_container{
@@ -363,7 +447,7 @@ body{
     .about_me_description{
         font-size: 0.8em;
     }
-    .skills_container_header_title{
+    .skills_container_header_title,.journey_container_header_title{
         font-size: 1.5em;
     }
     .skill{
@@ -371,7 +455,22 @@ body{
         height: 200px;
         margin: 10px;
     }
-    .my_grip_on_skill{
+    .my_grip_on_skill,.journeyPercentage,.journeyName,.journeyYear{
         font-size: 0.75em;
+    }
+    .journey_elements{
+        padding: 3px 0;
+    }.journey_common{
+        height: 175px;
+    }
+    .journey_startLine{
+        width: 3%;
+    }
+    .journey_middleLine{
+        width: 3%;
+    }
+    .journey_startLine_pointBall{
+        height: 5%;
+        width: 15%;
     }
 } 
