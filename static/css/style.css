@@ -474,7 +474,7 @@ body{
 
 @media screen and (max-width: 450px) {
     .home_container{
-        height: 90%;
+        height: 70%;
     }
     .inline_menu_container{
         display: none;
