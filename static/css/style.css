@@ -327,6 +327,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 1em 0;
 }
 .journey_container{
     width: 100%;
@@ -456,6 +457,19 @@ body{
     to{
         transform: translateY(180%);
     }
+}
+
+.about_end_div{
+    margin-right: 2em;
+}
+.common_end_div{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 0 1em;
+}
+.common_end_div:hover{
+    border-bottom: 3px solid black;
 }
 
 @media screen and (max-width: 450px) {
