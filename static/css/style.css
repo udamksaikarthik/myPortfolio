@@ -366,6 +366,15 @@ body{
     width: 3%;
     background-color: black;
 }
+.journey_endLine{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+    height: 50%;
+    width: 3%;
+    background-color: black;
+}
 .journey_startLine_pointBall{
     position: absolute;
     top: 50%;
@@ -391,10 +400,22 @@ body{
     background-position: center;
     background-size: 100%;
 }
+.journey_training_logo{
+    background: url('Images/online-training.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.journey_mnc_logo{
+    background: url('Images/accenture-modified.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 .journey_elements{
     padding: 5px 0;
 }
-.schoolDetails{
+.schoolDetails,.collegeDetails{
     align-items: flex-start;
 }
 .schoolName,.schoolYear,.schoolPercentage,.collegeName,.collegeYear,.collegePercentage{
@@ -452,7 +473,7 @@ body{
     }
     .skill{
         width: 40%;
-        height: 200px;
+        height: 150px;
         margin: 10px;
     }
     .my_grip_on_skill,.journeyPercentage,.journeyName,.journeyYear{
@@ -461,7 +482,7 @@ body{
     .journey_elements{
         padding: 3px 0;
     }.journey_common{
-        height: 175px;
+        height: 180px;
     }
     .journey_startLine{
         width: 3%;
