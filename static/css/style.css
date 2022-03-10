@@ -206,10 +206,12 @@ body{
     background-repeat: no-repeat;
 }
 .home_container{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 83%;
+    margin-bottom: 1em;
 }
 .about_me{
     display: flex;
@@ -427,8 +429,39 @@ body{
 .interName,.interYear,.interPercentage{
     text-align: end;
 }
+.scroll_container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 15px;
+    height: 20px;
+    left: 50%;
+    transform: translate(-50%,0);
+    bottom: 5px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.scroll_container_dot{
+    width: 4px;
+    height: 5px;
+    background-color: black;
+    border-radius: 3px;
+    animation: moveDot 0.5s linear 0s infinite alternate-reverse;
+}
+
+@keyframes moveDot {
+    from{
+        transform: translateY(30%);
+    }
+    to{
+        transform: translateY(180%);
+    }
+}
 
 @media screen and (max-width: 450px) {
+    .home_container{
+        height: 90%;
+    }
     .inline_menu_container{
         display: none;
     }
