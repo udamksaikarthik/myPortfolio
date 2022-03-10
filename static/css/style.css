@@ -4,10 +4,12 @@
     font-family: 'Times New Roman', Times, serif;
 }
 body{
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
 }
 .main_container_parent{
     width: 100%;
@@ -22,6 +24,7 @@ body{
 .header_container{
     display: flex;
     justify-content: space-between;
+    padding: 0.5em;
 }
 .logo_container{
     display: flex;
@@ -133,11 +136,12 @@ body{
 }
 .menu_button_black_template_animation_div{
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: black;
     transition: 0.5s 0.5s linear;
     transform: translateY(-100%);
+    overflow: hidden;
 }
 .menu_button_black_template_animation_div.active{
     transform: translateY(0%);
@@ -148,11 +152,12 @@ body{
 }
 .menu_button_white_template_animation_div{
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: white;
     transition: 0.5s 1s linear;
     transform: translateY(-100%);
+    overflow: hidden;
 }
 .menu_button_white_template_animation_div.active{
     transform: translateY(0%);
@@ -167,6 +172,7 @@ body{
     font-size: 1.5em;
     text-decoration: none;
     color: black;
+    transition: 0.5s linear;
 }
 .menu_options_anchor_container:hover{
     background-color: black;
@@ -192,7 +198,7 @@ body{
     width: 50%;
 }
 .portfolio_picture{
-    width: 296px;
+    width: 350px;
     height: 100%;
     margin: 1em;
     background-image: url('Images/PortfolioBackgroundPicture.jpeg');
@@ -204,6 +210,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 90vh;
 }
 .about_me{
     display: flex;
@@ -230,6 +237,89 @@ body{
 }
 .about_me_common{
     margin-bottom: 10px;
+}
+.skills_container,.skills_container_header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.skills_container_header_title{
+    text-align: center;
+    font-size: 3em;
+}
+.each_skill_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.skill{
+    width: 30%;
+    height: 230px;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.skill_logo_1{
+    background: url('Images/java.png');
+    background-position: center;
+    background-size: 100%;
+}
+.skill_logo_2{
+    background: url('Images/springboot.png');
+    background-position: center;
+    background-size: 100%;
+}
+.skill_logo_3{
+    background: url('Images/python.png');
+    background-position: center;
+    background-size: 100%;
+}
+.skill_logo_4{
+    background: url('Images/flask.png');
+    background-position: center;
+    background-size: 80%;
+}
+.skill_logo_5{
+    background: url('Images/html.png');
+    background-position: center;
+    background-size: 100%;
+}
+.skill_logo_6{
+    background: url('Images/css.png');
+    background-position: center;
+    background-size: 100%;
+}
+.skill_logo_7{
+    background: url('Images/mysql.png');
+    background-position: center;
+    background-size: 100%;
+}
+.skill_logo_8{
+    background: url('Images/informatica.png');
+    background-position: center;
+    background-size: 100%;
+}
+.skill_logo_9{
+    background: url('Images/java-script.png');
+    background-position: center;
+    background-size: 100%;
+}
+.skill_logo{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+    background-repeat: no-repeat;
+}
+.my_grip_on_skill{
+    width: 90%;
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: bold;
 }
 
 
@@ -272,5 +362,16 @@ body{
     }
     .about_me_description{
         font-size: 0.8em;
+    }
+    .skills_container_header_title{
+        font-size: 1.5em;
+    }
+    .skill{
+        width: 40%;
+        height: 200px;
+        margin: 10px;
+    }
+    .my_grip_on_skill{
+        font-size: 0.75em;
     }
 } 
