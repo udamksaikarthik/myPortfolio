@@ -245,7 +245,7 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-.skills_container_header_title,.journey_container_header_title{
+.skills_container_header_title,.journey_container_header_title,.project_container_header_title{
     text-align: center;
     font-size: 3em;
 }
@@ -471,7 +471,62 @@ body{
 .common_end_div:hover{
     border-bottom: 3px solid black;
 }
-
+.projects_container_parent,.projects_container_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.projects_container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.project{
+    width: 45%;
+    margin: 1em;
+    height: 80vh;
+    background-color: blue;
+    position: relative;
+}
+.project_title{
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 40%;
+    color: white;
+}
+.hover_div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.project:hover .project_title{
+    z-index: 2;
+}
+.project:hover .hover_div{
+    background-color: black;
+    opacity: 0.5;
+}
+.project1{
+    background: url('Images/clashofclans.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.project2{
+    background: url('Images/informatica-project.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.a_project_link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 @media screen and (max-width: 450px) {
     .home_container{
         height: 85%;
@@ -543,5 +598,15 @@ body{
     }
     .scroll_container{
         bottom: 5em;
+    }
+    .project{
+        width: 100%;
+        margin: 10px;
+    }
+    .project1{
+        background-position: right;
+    }
+    .project2{
+        background-position: left;
     }
 } 
