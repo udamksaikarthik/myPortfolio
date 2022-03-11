@@ -522,6 +522,18 @@ body{
     background-position: center;
     background-size: cover;
 }
+.project3{
+    background: url('Images/tictactoe.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.project4{
+    background: url('Images/blog.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .a_project_link{
     position: absolute;
     width: 100%;
@@ -570,7 +582,7 @@ body{
     .about_me_description{
         font-size: 0.8em;
     }
-    .skills_container_header_title,.journey_container_header_title{
+    .skills_container_header_title,.journey_container_header_title,.project_container_header_title{
         font-size: 1.5em;
     }
     .skill{
@@ -602,11 +614,16 @@ body{
     .project{
         width: 100%;
         margin: 10px;
+        height: 40vh;
+
     }
     .project1{
         background-position: right;
     }
     .project2{
         background-position: left;
+    }
+    .project_title{
+        font-size: 0.8em;
     }
 } 
