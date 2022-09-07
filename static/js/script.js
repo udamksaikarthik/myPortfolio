@@ -3,6 +3,7 @@ console.log('First Line is executing in javaScript')
  const menu_button_line1 = document.getElementById('menu_button_line1')
  const menu_button_line2 = document.getElementById('menu_button_line2')
  const menu_button_line3 = document.getElementById('menu_button_line3')
+ const main_container = document.getElementById('main_container')
  const menu_button_line_wbg_1 = document.getElementById('menu_button_line_wbg_1')
  const menu_button_line_wbg_2 = document.getElementById('menu_button_line_wbg_2')
  const menu_button_line_wbg_3 = document.getElementById('menu_button_line_wbg_3')
@@ -25,6 +26,9 @@ console.log('First Line is executing in javaScript')
      console.log('Adding active class to white and black BG')
      menu_button_black_template_animation_div.classList.toggle('active')
      menu_button_white_template_animation_div.classList.toggle('active')
+     setTimeout(function() {
+        main_container.classList.toggle('active')
+      }, 1000);
  }
 
  function reverseMenuButtonAnimation(){

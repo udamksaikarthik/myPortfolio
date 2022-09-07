@@ -161,11 +161,16 @@ body{
 }
 .menu_button_white_template_animation_div.active{
     transform: translateY(0%);
+    overflow: hidden;
 }
 .menu_button_white_template_animation_div.reverse{
     transition: 0.5s 0.5s linear;
     transform: translateY(-100%);
 }
+.main_container.active{
+    display: none;
+}
+
 .menu_options_anchor_container{
     padding: 0.5em;
     margin: 0 1em;
@@ -614,6 +619,29 @@ body{
     text-align: center;
     margin-right: 2px;
 }
+.follow_me_container{
+    display: flex;
+    align-items: center;
+    padding: 3px 0;
+}
+.instagram_logo{
+    background: url('Images/instagram.png');
+}
+.linkedin_logo{
+    background: url('Images/linkedin.png');
+}
+.instagram_logo,.linkedin_logo{
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.list_of_projects a{
+    text-decoration: none;
+    color: white;
+}
 @media screen and (max-width: 450px) {
     .home_container{
         height: 85%;
@@ -715,10 +743,14 @@ body{
         padding: 0.5em;
         flex-direction: column;
     }
-    .contact_information,.follow_me,.latest_projects,.current_availability{
+    .follow_me,.latest_projects,.current_availability{
         width: 80%;
         margin-top: 5px;
         height: 25vh;
+    }
+    .contact_information{
+        width: 80%;
+        margin-top: 5px;
     }
     .contact_title{
         font-size: 1.5em;
