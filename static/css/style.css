@@ -3,6 +3,9 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     position: relative;
     width: 100vw;

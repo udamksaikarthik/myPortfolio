@@ -32,7 +32,7 @@ console.log('First Line is executing in javaScript')
  }
 
  function reverseMenuButtonAnimation(){
-     console.log('Inside reverseMenuButtonAnimation')
+    console.log('Inside reverseMenuButtonAnimation')
     menu_button.click();
     console.log('Adding reverse class to white and black BG')
     menu_button_white_template_animation_div.classList.add('reverse')
@@ -40,4 +40,30 @@ console.log('First Line is executing in javaScript')
     menu_button_line_wbg_1.classList.add('active')
     menu_button_line_wbg_2.classList.add('active')
     menu_button_line_wbg_3.classList.add('active')
+}
+
+function home(){
+    setTimeout(function(){
+        window.location.href = '#home';
+    },1500)
+}
+function skills(){
+    setTimeout(function(){
+        window.location.href = '#skills';
+    },1500)
+}
+function journey(){
+    setTimeout(function(){
+        window.location.href = '#journey';
+    },1500)
+}
+function projects(){
+    setTimeout(function(){
+        window.location.href = '#projects';
+    },1500)
+}
+function contact(){
+    setTimeout(function(){
+        window.location.href = '#contact';
+    },1500)
 }
