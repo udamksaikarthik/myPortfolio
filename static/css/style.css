@@ -570,7 +570,6 @@ body{
     padding: 1em;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     transform: translateX(-2.5%);
     justify-content: space-evenly;
     background-color: black;
@@ -581,7 +580,6 @@ body{
 }
 .contact_information,.follow_me,.latest_projects,.current_availability{
     width: 25%;
-    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -745,15 +743,14 @@ body{
         margin-top: 1em;
         padding: 0.5em;
         flex-direction: column;
+        align-items: center;
     }
-    .follow_me,.latest_projects,.current_availability{
+    .contact_information,.follow_me,.latest_projects,.current_availability{
         width: 80%;
         margin-top: 5px;
-        height: 25vh;
     }
-    .contact_information{
-        width: 80%;
-        margin-top: 5px;
+    .follow_me{
+        margin-bottom: 2em;
     }
     .contact_title{
         font-size: 1.5em;
