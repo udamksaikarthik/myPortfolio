@@ -198,18 +198,17 @@ body{
     text-align: center;
 }
 .portfolio_picture_container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    width: 50%;
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    bottom: 0;
+    left: 0;
 }
 .portfolio_picture{
-    width: 350px;
+    width: 100%;
     height: 100%;
-    margin: 1em;
-    background-image: url('Images/PortfolioBackgroundPicture.jpeg');
-    background-size: 100%;
+    background-image: url('Images/portfolio_background_img.png');
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -222,11 +221,13 @@ body{
     margin-bottom: 1em;
 }
 .about_me{
+    position: absolute;
+    right: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding: 1em;
-    width: 50%;
+    width: 40%;
 }
 .about_me_name{
     font-size: 1.2em;
@@ -650,9 +651,6 @@ body{
     .inline_menu_container{
         display: none;
     }
-    .portfolio_picture_container{
-        height: 60vh;
-    }
     .logo_container{
         padding: 2px;
     }
@@ -712,9 +710,6 @@ body{
         height: 5%;
         width: 15%;
     }
-    .scroll_container{
-        bottom: 5em;
-    }
     .project{
         width: 100%;
         margin: 10px;
@@ -754,5 +749,16 @@ body{
     }
     .contact_title{
         font-size: 1.5em;
+    }
+    .portfolio_picture_container{
+        height: 50%;
+        width: 100%;
+        top: 0;
+    }
+    .about_me{
+        height: 50%;
+        width: 100%;
+        align-items: center;
+        bottom: 0;
     }
 } 
