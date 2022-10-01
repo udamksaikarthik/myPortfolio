@@ -12,14 +12,17 @@ console.log('First Line is executing in javaScript')
  const menu_button_black_template_animation_div = document.getElementById('menu_button_black_template_animation_div')
 const loading_div_container_id = document.getElementById('loading_div_container_id');
 const main_container_id = document.getElementById('main_container');
+const body_container_id = document.getElementById('body_container_id');
 
 window.addEventListener('onload',()=>{
     main_container_id.classList.add('hidden');
+    body_container_id.style.overflow = 'hidden';
 });
 
 window.addEventListener('load',()=>{
     loading_div_container_id.classList.add('hidden');
     main_container_id.classList.add('active');
+    body_container_id.style.overflow = 'visible';
 });
 
  function menuButtonAnimation(){
