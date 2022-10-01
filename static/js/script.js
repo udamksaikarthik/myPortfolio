@@ -10,16 +10,6 @@ console.log('First Line is executing in javaScript')
  const menu_button = document.getElementById('menu_button')
  const menu_button_white_template_animation_div = document.getElementById('menu_button_white_template_animation_div')
  const menu_button_black_template_animation_div = document.getElementById('menu_button_black_template_animation_div')
-const loading_div_container_id = document.getElementById('loading_div_container_id');
-const main_container_id = document.getElementById('main_container');
-const body_container_id = document.getElementById('body_container_id');
-
-
-
-window.addEventListener('load',()=>{
-    loading_div_container_id.classList.add('hidden');
-    main_container_id.classList.add('active');
-});
 
  function menuButtonAnimation(){
      console.log('Inside menuButtonAnimation')
