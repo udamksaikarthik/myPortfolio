@@ -263,6 +263,7 @@ body{
     font-size: 3em;
 }
 .each_skill_container{
+    position: relative;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -343,6 +344,7 @@ body{
     margin: 1em 0;
 }
 .journey_container{
+    position: relative;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -450,7 +452,7 @@ body{
     width: 15px;
     height: 20px;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translateX(-50%);
     bottom: 5px;
     border: 3px solid black;
     border-radius: 5px;
@@ -470,10 +472,6 @@ body{
     to{
         transform: translateY(180%);
     }
-}
-
-.about_end_div{
-    margin-right: 2em;
 }
 .common_end_div{
     text-decoration: none;
@@ -648,6 +646,21 @@ body{
     text-decoration: none;
     color: white;
 }
+.canvas_container{
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+#home_canvas_id,#skill_canvas_id,#journey_canvas_id{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
 @media screen and (max-width: 450px) {
     .home_container{
         height: 85%;
@@ -764,5 +777,8 @@ body{
         width: 100%;
         align-items: center;
         bottom: 0;
+    }
+    .scroll_container{
+        position: static;
     }
 } 
