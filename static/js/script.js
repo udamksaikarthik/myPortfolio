@@ -98,9 +98,9 @@ home_canvas_background_cloud_4_image.src = '../static/css/Images/clouds_4.png'
 const home_canvas_background_rock_image = new Image();
 home_canvas_background_rock_image.src = '../static/css/Images/rocks_1.png'
 const home_canvas_background_journey_sky_image = new Image();
-home_canvas_background_journey_sky_image.src = '../static/css/Images/Ground_Journey_Sky.png'
+home_canvas_background_journey_sky_image.src = '../static/css/Images/ground_journey_sky.png'
 const home_canvas_background_journey_image = new Image();
-home_canvas_background_journey_image.src = '../static/css/Images/Ground.png'
+home_canvas_background_journey_image.src = '../static/css/Images/ground.png'
 
 class Layer{
     constructor(image,image_width, image_height,home_background_width,home_background_height, flag, ctx){
