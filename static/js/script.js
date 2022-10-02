@@ -154,9 +154,8 @@ const layer_12 = new Layer(home_canvas_background_cloud_image, home_image_width,
 const layer_13 = new Layer(home_canvas_background_journey_image, home_image_width, home_image_height,journey_background_width,journey_background_height, false, journey_canvas_ctx)
 const layer_14 = new Layer(home_canvas_background_cloud_3_image, home_image_width, home_image_height,journey_background_width,journey_background_height, true, journey_canvas_ctx)
 
-// const layer_objects = [layer_1,layer_2,layer_3,layer_5,layer_6,layer_7,layer_8,layer_9,layer_10,layer_11,layer_12, layer_13]
+const layer_objects = [layer_1,layer_2,layer_3,layer_5,layer_6,layer_7,layer_8,layer_9,layer_10,layer_11,layer_12, layer_13]
 
-const layer_objects = [layer_1,layer_2,layer_3,layer_5]
 
 function animate(){
     home_canvas_ctx.clearRect(0,0,home_background_width,home_background_height)
