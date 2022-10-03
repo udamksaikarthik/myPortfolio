@@ -175,6 +175,7 @@ for(let i=0;i<images.length;i++){
     images[i].onload = function(){
         imagesLoaded++;
         if(imagesLoaded == imgCount){
+            console.log('Images have been successfully loaded!!!')
             animate();
         }
     }
