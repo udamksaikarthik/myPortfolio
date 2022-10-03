@@ -102,6 +102,8 @@ home_canvas_background_journey_sky_image.src = '../static/css/Images/ground_jour
 const home_canvas_background_journey_image = new Image();
 home_canvas_background_journey_image.src = '../static/css/Images/ground.png'
 
+const images = [home_canvas_background_image, home_canvas_background_cloud_image, home_canvas_background_cloud_2_image, home_canvas_background_cloud_3_image, home_canvas_background_cloud_4_image, home_canvas_background_rock_image, home_canvas_background_journey_sky_image, home_canvas_background_journey_image]
+
 class Layer{
     constructor(image,image_width, image_height,home_background_width,home_background_height, flag, ctx){
         this.sx = 0;
@@ -156,22 +158,24 @@ const layer_14 = new Layer(home_canvas_background_cloud_3_image, home_image_widt
 
 const layer_objects = [layer_1,layer_2,layer_3,layer_5,layer_6,layer_7,layer_8,layer_9,layer_10,layer_11,layer_12, layer_13]
 
-let onLoadCount = 0;
 
 function animate(){
     home_canvas_ctx.clearRect(0,0,home_background_width,home_background_height)
     layer_objects.forEach(object => {
         object.update();
-        if(onLoadCount>0){
-        object.image.onload = function(){
-            object.draw();
-            onLoadCount++;
-        }
-    }
-    else{
         object.draw();
-    }
     })
     requestAnimationFrame(animate)
 }
-animate();
+
+const imgCount = images.length;
+let imagesLoaded = 0;
+
+for(let i=0;i<images.length;i++){
+    images[i].onload = function(){
+        imagesLoaded++;
+        if(imagesLoaded == imgCount){
+            animate();
+        }
+    }
+}
