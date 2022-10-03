@@ -239,7 +239,8 @@ body{
 .about_me_name{
     font-size: 1.2em;
     letter-spacing: 15px;
-    color: gray;
+    /* color: #7B3F00; */
+    color: #1A0014;
     text-align: right;
 }
 .about_me_title_role{
@@ -248,7 +249,8 @@ body{
 }
 .about_me_description{
     font-size: 1.3em;
-    color: rgb(85, 84, 84);
+    /* color: #7B3F00; */
+    color: #1A0014;
     padding: 0.2em;
     text-align: justify;
 }
