@@ -18,6 +18,78 @@ body{
     height: 100vh;
     overflow: hidden;
 }
+.informatica_mdm_project_div_slide{
+    display: none;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+.informatica_mdm_project_div_slide.show{
+    display: flex;
+    flex-direction: column;
+}
+.informatica_mdm_project_div_slide_parent_content_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.informatica_mdm_project_div_slide_content_container{
+    width: 80%;
+}
+.role_container{
+    width: 100%;
+    padding: 1em 0;
+}
+.role_title_header{
+    display: flex;
+    align-items: center;
+    font-size: 1.60em;
+    font-weight: bold;
+}
+.role_accomplishments_header,.role_skill_header,.role_certificate_header{
+    font-size: 1.60em;
+    font-weight: bold;
+}
+.role_title_header span,.role_accomplishments_points{
+    font-size: 0.75em;
+    font-weight: lighter;
+}
+.role_skill_header h4,.role_certificate_header h3{
+    font-size: 0.6em;
+}
+.role_title,.role_accomplishments,.role_skill,.role_certificate{
+    text-decoration: underline;
+}
+.role_accomplishments_points,.role_certificate_header h3,.role_skill_header h4{
+    width: 90%;
+    margin-left: 10%;
+}
+.informatica_mdm_project_div_slide_header{
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+    border-bottom: 2px solid black;
+}
+.informatica_mdm_project_div_slide_header h2{
+    color: rebeccapurple;
+    font-size: 2em;
+    font-weight: bold;
+}
+.crossButton{
+    background-color: salmon;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    font-size: 2em;
+    padding: 0 1em;
+}
 .main_container_parent{
     width: 100%;
     height: 100%;
@@ -809,5 +881,11 @@ body{
     }
     .skills_container_header_title,.journey_container_header_title,.project_container_header_title{
         width: 30%;
+    }
+    .role_title_header,.role_accomplishments_header, .role_skill_header, .role_certificate_header{
+        font-size: 0.80em;
+    }
+    .informatica_mdm_project_div_slide_header h2,.crossButton{
+        font-size: 1.3em;
     }
 } 

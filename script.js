@@ -185,3 +185,17 @@ for(let i=0;i<images.length;i++){
         }
     }
 }
+
+const informatica_mdm_project_div_slide_id = document.getElementById('informatica_mdm_project_div_slide')
+
+function openInfaProjectDetails(){
+    informatica_mdm_project_div_slide_id.classList.add('show')
+    main_container_id.classList.add('bodyhidden')
+    window.location.href = '#informatica_mdm_project_div_slide'
+}
+
+function CloseCross(){
+    informatica_mdm_project_div_slide_id.classList.remove('show')
+    main_container_id.classList.remove('bodyhidden')
+    window.location.href= '#project2'
+}
