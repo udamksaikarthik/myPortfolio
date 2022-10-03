@@ -13,6 +13,11 @@ body{
     justify-content: center;
     overflow-x: hidden;
 }
+.main_container.bodyhidden{
+    display: none;
+    height: 100vh;
+    overflow: hidden;
+}
 .main_container_parent{
     width: 100%;
     height: 100%;
@@ -137,8 +142,8 @@ body{
 }
 .menu_button_black_template_animation_div{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: black;
     transition: 0.5s 0.5s linear;
     transform: translateY(-100%);
@@ -153,8 +158,8 @@ body{
 }
 .menu_button_white_template_animation_div{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: white;
     transition: 0.5s 1s linear;
     transform: translateY(-100%);
@@ -221,7 +226,6 @@ body{
     align-items: center;
     justify-content: center;
     height: 85vh;
-    margin-bottom: 1em;
 }
 .about_me{
     position: absolute;
@@ -251,17 +255,25 @@ body{
 .about_me_common{
     margin-bottom: 10px;
 }
-.skills_container,.skills_container_header{
+.skills_container,.skills_container_header,.journey_container_header,.projects_container_header{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.skills_container_header{
-    /* background-color: black; */
+.skills_container_header,.journey_container_header,.projects_container_header{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
 }
-.skills_container_header_title{
-    /* color: white; */
+.headers_straight_line{
+    height: 2px;
+    width: 40%;
+    background-color: black;
+}
+.skills_container_header_title,.journey_container_header_title,.project_container_header_title{
+    width: 20%;
 }
 .skills_container_header_title,.journey_container_header_title,.project_container_header_title{
     text-align: center;
@@ -346,7 +358,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1em 0;
 }
 .journey_container{
     position: relative;
@@ -572,6 +583,9 @@ body{
     font-size: 4em;
     font-weight: bold;
 }
+.projects_container_header{
+    flex-direction: row;
+}
 .contact_container_parent{
     position: relative;
     margin-top: 2em;
@@ -786,5 +800,12 @@ body{
     .header_container{
         margin-top: 0.5em;
         padding: 0.5em 0;
+    }
+    
+    .headers_straight_line{
+        width: 35%;
+    }
+    .skills_container_header_title,.journey_container_header_title,.project_container_header_title{
+        width: 30%;
     }
 } 
