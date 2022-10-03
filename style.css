@@ -9,7 +9,6 @@ html {
 body{
     position: relative;
     width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     overflow-x: hidden;
@@ -63,7 +62,6 @@ body{
 .inline_menu_container{
     display: flex;
     align-items: center;
-    margin: 0 1em;
 }
 .menu_button_container{
     position: relative;
@@ -177,15 +175,15 @@ body{
 }
 
 .menu_options_anchor_container{
-    height: 100%;
     width: 100%;
-    padding: 0 1em;
+    padding: 1em;
     font-size: 1.5em;
     text-decoration: none;
     color: black;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .menu_options_anchor_container:hover{
     background-color: black;
@@ -222,7 +220,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 83%;
+    height: 85vh;
     margin-bottom: 1em;
 }
 .about_me{
@@ -669,9 +667,6 @@ body{
     left: 0;
 }
 @media screen and (max-width: 450px) {
-    .home_container{
-        height: 85%;
-    }
     .inline_menu_container{
         display: none;
     }
