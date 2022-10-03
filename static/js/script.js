@@ -172,6 +172,7 @@ const imgCount = images.length;
 let imagesLoaded = 0;
 
 console.log('outside for loop')
+
 for(let i=0;i<images.length;i++){
     console.log('Inside for loop')
     images[i].onload = function(){
