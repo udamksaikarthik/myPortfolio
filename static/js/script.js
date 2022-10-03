@@ -156,15 +156,22 @@ const layer_14 = new Layer(home_canvas_background_cloud_3_image, home_image_widt
 
 const layer_objects = [layer_1,layer_2,layer_3,layer_5,layer_6,layer_7,layer_8,layer_9,layer_10,layer_11,layer_12, layer_13]
 
+let onLoadCount = 0;
 
 function animate(){
     home_canvas_ctx.clearRect(0,0,home_background_width,home_background_height)
     layer_objects.forEach(object => {
         object.update();
+        if(onLoadCount>0){
+        object.image.onload = function(){
+            object.draw();
+            onLoadCount++;
+        }
+    }
+    else{
         object.draw();
+    }
     })
     requestAnimationFrame(animate)
 }
-setTimeout(() => {
-    animate();
-}, 5000);
+animate();
