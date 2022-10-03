@@ -171,9 +171,12 @@ function animate(){
 const imgCount = images.length;
 let imagesLoaded = 0;
 
+console.log('outside for loop')
 for(let i=0;i<images.length;i++){
+    console.log('Inside for loop')
     images[i].onload = function(){
         imagesLoaded++;
+        console.log('imagesLoaded: '+imagesLoaded)
         if(imagesLoaded == imgCount){
             console.log('Images have been successfully loaded!!!')
             animate();
