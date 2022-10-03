@@ -165,4 +165,6 @@ function animate(){
     })
     requestAnimationFrame(animate)
 }
-animate();
+setTimeout(() => {
+    animate();
+}, 5000);
