@@ -635,6 +635,19 @@ body{
     background-position: center;
     background-size: cover;
 }
+.project5{
+    background: url('Images/rock-paper-scissors.png');
+    background-color: #2F9599;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+.project6{
+    background: url('Images/parallax_2d_background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .a_project_link{
     position: absolute;
     width: 100%;
