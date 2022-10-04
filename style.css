@@ -253,7 +253,8 @@ body{
 
 .menu_options_anchor_container{
     width: 100%;
-    padding: 1em;
+    padding: 0 1em;
+    height: 100%;
     font-size: 1.5em;
     text-decoration: none;
     color: black;
@@ -900,5 +901,8 @@ body{
     }
     .informatica_mdm_project_div_slide_header h2,.crossButton{
         font-size: 1.3em;
+    }
+    .menu_options_anchor_container{
+        height: 10%;
     }
 } 
