@@ -1,12 +1,14 @@
 console.log('First Line is executing in javaScript')
 
 const main_container_id = document.getElementById('main_container')
+const main_container_id_mobile_verion = document.getElementById('main_container_id_mobile_verion')
 const preloader_container_id = document.getElementById('preloader_container_id')
 const body_container_id = document.getElementById('body_container_id')
 
 window.addEventListener('load',function(){
     console.log('The page has been loaded!')
     main_container_id.classList.add('unhide')
+    main_container_id_mobile_verion.classList.add('unhide')
     preloader_container_id.classList.add('hide')
     body_container_id.classList.add('unhide_overflow_y')
 })
@@ -43,7 +45,6 @@ function menuButtonAnimation(){
 
 function reverseMenuButtonAnimation(){
    console.log('Inside reverseMenuButtonAnimation')
-    // main_container_id.classList.remove('bodyhidden')
    menu_button.click();
    console.log('Adding reverse class to white and black BG')
    menu_button_white_template_animation_div.classList.add('reverse')
