@@ -12,11 +12,113 @@ body{
     display: flex;
     justify-content: center;
     overflow-x: hidden;
+    overflow-y: hidden;
+}
+body.unhide_overflow_y{
+    overflow-y: visible;
 }
 .main_container.bodyhidden{
     display: none;
     height: 100vh;
     overflow: hidden;
+}
+.main_container.unhide{
+    visibility: visible;
+}
+.preloader_container{
+    z-index: 5;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.preloader_container h3{
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+.span_dots_container{
+    letter-spacing: 8px;
+}
+.span_dots_container .first_dot{
+    animation: loader_dot_opacity 1.20s 0s infinite;
+}
+.span_dots_container .second_dot{
+    animation: loader_dot2_opacity 1.20s 0s infinite;
+}
+.span_dots_container .third_dot{
+    animation: loader_dot3_opacity 1.20s 0s infinite;
+}
+@keyframes loader_dot_opacity {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes loader_dot2_opacity {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes loader_dot3_opacity {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.preloader_container.hide{
+    visibility: hidden;
 }
 .informatica_mdm_project_div_slide{
     display: none;
@@ -98,8 +200,7 @@ body{
 }
 .main_container{
     width: 95%;
-    /* display: none;
-    visibility: hidden; */
+    visibility: hidden;
 }
 .header_container{
     display: flex;

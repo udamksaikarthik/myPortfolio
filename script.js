@@ -1,6 +1,16 @@
 console.log('First Line is executing in javaScript')
 
 const main_container_id = document.getElementById('main_container')
+const preloader_container_id = document.getElementById('preloader_container_id')
+const body_container_id = document.getElementById('body_container_id')
+
+window.addEventListener('load',function(){
+    console.log('The page has been loaded!')
+    main_container_id.classList.add('unhide')
+    preloader_container_id.classList.add('hide')
+    body_container_id.classList.add('unhide_overflow_y')
+})
+
 const menu_button_line1 = document.getElementById('menu_button_line1')
 const menu_button_line2 = document.getElementById('menu_button_line2')
 const menu_button_line3 = document.getElementById('menu_button_line3')
