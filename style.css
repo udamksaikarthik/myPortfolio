@@ -869,6 +869,33 @@ body.unhide_overflow_y{
     top: 0;
     left: 0;
 }
+.onscroll_animation_hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+.onscroll_animation_hidden_top{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+}
+.onscroll_animation_show_top{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0%);
+    transition: all 1s;
+}
+.onscroll_animation_hidden_right{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+}
+.onscroll_animation_show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0%);
+    transition: all 1s;
+}
 @media screen and (max-width: 450px) {
     .inline_menu_container{
         display: none;
@@ -1005,5 +1032,8 @@ body.unhide_overflow_y{
     }
     .menu_options_anchor_container{
         height: 10%;
+    }
+    .informatica_mdm_project_div_slide_content_container{
+        width: 90%;
     }
 } 

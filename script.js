@@ -1,5 +1,20 @@
 console.log('First Line is executing in javaScript')
 
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('onscroll_animation_show')
+        }else{
+            entry.target.classList.remove('onscroll_animation_show')
+        }
+    });
+});
+const onscroll_elements = document.querySelectorAll('.onscroll_animation_hidden')
+const onscroll_right_elements = document.querySelectorAll('.onscroll_animation_hidden_right')
+onscroll_elements.forEach((element) => observer.observe(element));
+onscroll_right_elements.forEach((element) => observer.observe(element));
+
+
 const main_container_id = document.getElementById('main_container')
 const main_container_id_mobile_verion = document.getElementById('main_container_id_mobile_verion')
 const preloader_container_id = document.getElementById('preloader_container_id')
@@ -208,5 +223,5 @@ function openInfaProjectDetails(){
 function CloseCross(){
     informatica_mdm_project_div_slide_id.classList.remove('show')
     main_container_id.classList.remove('bodyhidden')
-    window.location.href= '#project2'
+    window.location.href= '#projects'
 }
