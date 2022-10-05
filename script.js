@@ -37,6 +37,7 @@ const menu_button_line_wbg_3 = document.getElementById('menu_button_line_wbg_3')
 const menu_button = document.getElementById('menu_button')
 const menu_button_white_template_animation_div = document.getElementById('menu_button_white_template_animation_div')
 const menu_button_black_template_animation_div = document.getElementById('menu_button_black_template_animation_div')
+const html_element = document.getElementById('my_html_element')
 
 function menuButtonAnimation(){
     console.log('Inside menuButtonAnimation')
@@ -55,6 +56,7 @@ function menuButtonAnimation(){
     menu_button_white_template_animation_div.classList.toggle('active')
     setTimeout(function() {
         main_container_id.classList.toggle('bodyhidden')
+        html_element.classList.toggle('remove_overflow_x')
      }, 1000);
 }
 
