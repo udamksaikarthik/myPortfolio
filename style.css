@@ -4,6 +4,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 html {
+    overflow:auto;
     scroll-behavior: smooth;
 }
 body{
