@@ -9,16 +9,27 @@ const observer = new IntersectionObserver((entries)=>{
         }
     });
 });
+
+const observer_one_time = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('onscroll_animation_show')
+        }
+    });
+});
+
 const onscroll_elements = document.querySelectorAll('.onscroll_animation_hidden')
 const onscroll_right_elements = document.querySelectorAll('.onscroll_animation_hidden_right')
-onscroll_elements.forEach((element) => observer.observe(element));
-onscroll_right_elements.forEach((element) => observer.observe(element));
+onscroll_elements.forEach((element) => observer_one_time.observe(element));
+onscroll_right_elements.forEach((element) => observer_one_time.observe(element));
 
 
 const main_container_id = document.getElementById('main_container')
 const main_container_id_mobile_verion = document.getElementById('main_container_id_mobile_verion')
 const preloader_container_id = document.getElementById('preloader_container_id')
 const body_container_id = document.getElementById('body_container_id')
+const portfolio_picture_id = document.getElementById('portfolio_picture_id')
+const onscroll_animation_hidden_right_onetime_tags = document.querySelectorAll('.onscroll_animation_hidden_right_onetime')
 
 window.addEventListener('load',function(){
     console.log('The page has been loaded!')
@@ -26,6 +37,8 @@ window.addEventListener('load',function(){
     main_container_id_mobile_verion.classList.add('unhide')
     preloader_container_id.classList.add('hide')
     body_container_id.classList.add('unhide_overflow_y')
+    portfolio_picture_id.classList.add('onscroll_animation_show')
+    onscroll_animation_hidden_right_onetime_tags.forEach((element) => observer_one_time.observe(element));
 })
 
 const menu_button_line1 = document.getElementById('menu_button_line1')

@@ -874,7 +874,7 @@ body.unhide_overflow_y{
     top: 0;
     left: 0;
 }
-.onscroll_animation_hidden{
+.onscroll_animation_hidden,.onscroll_animation_hidden_onetime{
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
@@ -890,7 +890,7 @@ body.unhide_overflow_y{
     transform: translateY(0%);
     transition: all 1s;
 }
-.onscroll_animation_hidden_right{
+.onscroll_animation_hidden_right,.onscroll_animation_hidden_right_onetime{
     opacity: 0;
     filter: blur(5px);
     transform: translateX(100%);
