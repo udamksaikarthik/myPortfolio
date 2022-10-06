@@ -7,8 +7,49 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body id="body_container_id">
-    
+<body>
+
+    <div class="menu_button_black_template_animation_div" id="menu_button_black_template_animation_div">
+        
+    </div>
+    <div class="menu_button_white_template_animation_div" id="menu_button_white_template_animation_div">
+        <div class="main_container_parent">
+        <div  id="main_container_id_mobile_verion" class="main_container">
+        <div class="header_container">
+            <div class="logo_container">
+                    <div class="logo_symbol_content">
+                        K
+                    </div>
+                <div class="column_name_container">
+                    <div class="logo_name">
+                        SAIKARTHIK, UDA
+                    </div>
+                    <div class="logo_role">
+                        Developer
+                    </div>
+                </div>
+            </div>
+            <div class="menu_button_container">
+                <div id="menu_button_line_wbg_1" class="menu_button_line_wbg_1"></div>
+                <div id="menu_button_line_wbg_2" class="menu_button_line_wbg_2"></div>
+                <div id="menu_button_line_wbg_3" class="menu_button_line_wbg_3"></div>
+                <button class="menu_button" onclick="reverseMenuButtonAnimation();"></button>
+            </div>
+        </div>
+        <hr>
+        <div class="menu_options_container_wbg">
+            <a class="menu_options_anchor_container menu_options_anchor_container_wbg" 
+            onclick="reverseMenuButtonAnimation(); home();">Home</a>
+            <a class="menu_options_anchor_container menu_options_anchor_container_wbg" onclick="reverseMenuButtonAnimation(); skills()">Skills</a>
+            <a class="menu_options_anchor_container menu_options_anchor_container_wbg" onclick="reverseMenuButtonAnimation(); journey();">Journey</a>
+            <a class="menu_options_anchor_container menu_options_anchor_container_wbg" onclick="reverseMenuButtonAnimation(); projects();">Projects</a>
+            <a class="menu_options_anchor_container menu_options_anchor_container_wbg" onclick="reverseMenuButtonAnimation(); contact();">Contact</a>
+        </div>
+        </div>    
+    </div>
+    </div>
+   
+    <div class="body_container_id" id="body_container_id">
 
     <div id="preloader_container_id" class="preloader_container">
         <h3>Loading <span class="span_dots_container"><span class="first_dot">.</span><span class="second_dot">.</span><span class="third_dot">.</span></span></h3>
@@ -495,45 +536,7 @@
     </div>
     
     
-    <div class="menu_button_black_template_animation_div" id="menu_button_black_template_animation_div">
-        
-    </div>
-    <div class="menu_button_white_template_animation_div" id="menu_button_white_template_animation_div">
-        <div class="main_container_parent">
-        <div  id="main_container_id_mobile_verion" class="main_container">
-        <div class="header_container">
-            <div class="logo_container">
-                    <div class="logo_symbol_content">
-                        K
-                    </div>
-                <div class="column_name_container">
-                    <div class="logo_name">
-                        SAIKARTHIK, UDA
-                    </div>
-                    <div class="logo_role">
-                        Developer
-                    </div>
-                </div>
-            </div>
-            <div class="menu_button_container">
-                <div id="menu_button_line_wbg_1" class="menu_button_line_wbg_1"></div>
-                <div id="menu_button_line_wbg_2" class="menu_button_line_wbg_2"></div>
-                <div id="menu_button_line_wbg_3" class="menu_button_line_wbg_3"></div>
-                <button class="menu_button" onclick="reverseMenuButtonAnimation();"></button>
-            </div>
-        </div>
-        <hr>
-        <div class="menu_options_container_wbg">
-            <a class="menu_options_anchor_container menu_options_anchor_container_wbg" 
-            onclick="reverseMenuButtonAnimation(); home();">Home</a>
-            <a class="menu_options_anchor_container menu_options_anchor_container_wbg" onclick="reverseMenuButtonAnimation(); skills()">Skills</a>
-            <a class="menu_options_anchor_container menu_options_anchor_container_wbg" onclick="reverseMenuButtonAnimation(); journey();">Journey</a>
-            <a class="menu_options_anchor_container menu_options_anchor_container_wbg" onclick="reverseMenuButtonAnimation(); projects();">Projects</a>
-            <a class="menu_options_anchor_container menu_options_anchor_container_wbg" onclick="reverseMenuButtonAnimation(); contact();">Contact</a>
-        </div>
-        </div>    
-    </div>
-    </div>
+    </div>  
 
     <script src="script.js"></script>
 </body>

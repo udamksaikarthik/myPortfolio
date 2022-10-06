@@ -7,6 +7,10 @@ html {
     scroll-behavior: smooth;
 }
 body{
+    width: 100vw;
+    overflow: auto;
+}
+.body_container_id{
     position: relative;
     width: 100vw;
     display: flex;
@@ -14,7 +18,10 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
 }
-body.unhide_overflow_y{
+.body_container_id.hide{
+    display: none;
+}
+.body_container_id.unhide_overflow_y{
     overflow-y: visible;
 }
 .main_container.bodyhidden{
@@ -315,6 +322,7 @@ body.unhide_overflow_y{
 }
 .menu_button_black_template_animation_div{
     position: absolute;
+    z-index: 5;
     width: 100vw;
     height: 100vh;
     background-color: black;
@@ -331,6 +339,7 @@ body.unhide_overflow_y{
 }
 .menu_button_white_template_animation_div{
     position: absolute;
+    z-index: 6;
     width: 100vw;
     height: 100vh;
     background-color: white;
