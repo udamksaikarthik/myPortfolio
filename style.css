@@ -4,12 +4,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 html {
-    width: 100vw;
-    overflow-x: hidden;
     scroll-behavior: smooth;
-}
-.remove_overflow_x{
-    overflow-x: visible;
 }
 body{
     position: relative;

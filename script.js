@@ -69,7 +69,6 @@ function menuButtonAnimation(){
     menu_button_white_template_animation_div.classList.toggle('active')
     setTimeout(function() {
         main_container_id.classList.toggle('bodyhidden')
-        html_element.classList.toggle('remove_overflow_x')
      }, 1000);
 }
 
