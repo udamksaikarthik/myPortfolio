@@ -239,3 +239,52 @@ function CloseCross(){
     main_container_id.classList.remove('bodyhidden')
     window.location.href= '#projects'
 }
+
+const black_container_div_about_me_animation_slide_id = document.getElementById('black_container_div_about_me_animation_slide_id');
+const white_container_div_about_me_animation_slide_id = document.getElementById('white_container_div_about_me_animation_slide_id')
+
+function sliderAnimationAboutMe(){
+    window.location.href = '#body_id'
+    black_container_div_about_me_animation_slide_id.classList.add('slide_in')
+    setTimeout(function(){
+        white_container_div_about_me_animation_slide_id.classList.add('slide_in')
+    },1000)
+    setTimeout(function(){
+        main_container_id.classList.add('bodyhidden')
+    },2000)
+    
+    const content_container_about_me_id = document.getElementById('content_container_about_me_id')
+    const namasthe_logo_id = document.getElementById('namasthe_logo_id')
+
+    let font_size = window.getComputedStyle(content_container_about_me_id).fontSize;
+    namasthe_logo_id.style.height = font_size;
+    namasthe_logo_id.style.width = font_size;
+
+    console.log('fontSize: ',font_size)
+    
+    const about_me_pic_common_id = document.getElementById('about_me_pic_common_id')
+    const about_me_grad__pic_id = document.getElementById('about_me_grad__pic_id')
+    const about_me_accenture_employee__pic_id = document.getElementById('about_me_accenture_employee__pic_id')
+
+    let about_me_pic_common_id_width = about_me_pic_common_id.offsetWidth;
+
+    if(window.innerWidth>window.innerHeight){
+        about_me_grad__pic_id.style.marginTop = '5px'
+    }else{
+        about_me_pic_common_id.style.height = (about_me_pic_common_id_width-60) + 'px'
+        about_me_grad__pic_id.style.height = (about_me_pic_common_id_width-60) + 'px'
+        about_me_accenture_employee__pic_id.style.height = (about_me_pic_common_id_width-60) + 'px'
+    }
+
+}
+
+function closeAboutMe(){
+    white_container_div_about_me_animation_slide_id.classList.remove('slide_in')
+    setTimeout(function(){
+        black_container_div_about_me_animation_slide_id.classList.remove('slide_in')
+    },1000)
+    setTimeout(function(){
+        main_container_id.classList.remove('bodyhidden')
+    },1000)
+}
+

@@ -1,14 +1,16 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     width: 100vw;
     overflow: auto;
+    overflow-x: hidden;
 }
 .body_container_id{
     position: relative;
@@ -848,10 +850,13 @@ body{
 .instagram_logo{
     background: url('Images/instagram.png');
 }
+.github_logo{
+    background: url('Images/github_logo.png');
+}
 .linkedin_logo{
     background: url('Images/linkedin.png');
 }
-.instagram_logo,.linkedin_logo{
+.instagram_logo,.linkedin_logo,.github_logo{
     width: 40px;
     height: 40px;
     background-position: center;
@@ -904,6 +909,183 @@ body{
     filter: blur(0);
     transform: translateX(0%);
     transition: all 1s;
+}
+.black_container_div_about_me_animation_slide{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: black;
+    transform: translateX(-100%);
+    transition: 1s ease-in-out;
+    z-index: 10;
+}
+.white_container_div_about_me_animation_slide{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: white;
+    transform: translateX(-100%);
+    transition: 1s ease-in-out;
+    z-index: 10;
+}
+.black_container_div_about_me_animation_slide.slide_in{
+    transform: translateX(0);
+}
+.white_container_div_about_me_animation_slide.slide_in{
+    transform: translateX(0);
+}
+.fixed_left_arrow_logo{
+    position: fixed;
+    top: 10px;
+    left: 5%;
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    background: url('Images/arrow.png');
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about_me_profile_picture{
+    position: absolute;
+    top: 10px;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    background: url('Images/portfolio_background_img.png');
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about_me_title{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: bold;
+}
+.about_me_main_container{
+    margin-top: 45px;
+    background-color: #EEA47FFF;
+    width: 90vw;
+    margin-left: 5%;
+    padding: 1em;
+}
+.aboute_me_common_container_header{
+    font-weight: bold;
+    background-color: #00539CFF;
+    color: white;
+    padding: 1em;
+}
+.content_container_about_me{
+    padding: 1.5em;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+.namasthe_logo{
+    display: inline-block;
+    background: url('Images/namaste.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent; 
+}
+.highlight_word{
+    font-weight: bold;
+    color: #00539CFF;
+}
+.about_me_intro_pic{
+    background: url('Images/about_me_intro_pic.jpeg');
+
+}
+.about_me_year_container span{
+    border: 2px solid black;
+    padding: 5px;
+    font-weight: bold;
+}
+.school_and_standard_container span{
+    font-weight: bold;
+}
+.content_container_about_me_common{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.standard_container_about_me_common{
+    margin-top: 5px;
+}
+.about_me_grad__pic{
+    background: url('Images/graduation_picture.jpeg');
+}
+.about_me_accenture_employee__pic{
+    background: url('Images/accenture_employee_pic.jpeg');
+}
+
+.about_me_pic_common{
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.content_container_hobbies_about_me{
+    margin: 1em 0;
+}
+.content_container_hobbies_about_me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about_me_common_div_hobby_container{
+    position: relative;
+    width: 45%;
+    height: 50vh;
+    margin: 2.5% 2.5%;
+}
+.cricket_bg_pic{
+    background: url('Images/cricket_image.jpg');
+}
+.skating_bg_pic{
+    background: url('Images/skating_image.jpg');
+}
+.chess_bg_pic{
+    background: url('Images/chess_image.jpg');
+}
+.movie_bg_pic{
+    background: url('Images/movie_buff_image.jpg');
+}
+.biker_bg_pic{
+    background: url('Images/Biker_image.jpg');
+}
+.about_me_common_div_hobby_container_complete_content{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+}
+.about_me_common_div_hobby_container_bg_pic{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about_me_common_div_hobby_container_bg_div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.75;
+}
+.onscroll_animation_hidden_right_onetime a{
+    border: 2px solid black;
 }
 @media screen and (max-width: 450px) {
     .inline_menu_container{
@@ -1045,4 +1227,28 @@ body{
     .informatica_mdm_project_div_slide_content_container{
         width: 90%;
     }
+.content_container_about_me{
+    padding: 0.5em 1em;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+.about_me_pic_common{
+    height: 50vh;
+}
+.about_me_common_div_hobby_container{
+    width: 100%;
+    height: 30vh;
+    margin: 2.5% 0;
+}
+.about_me_common_div_hobby_container_bg_pic{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content_container_hobbies_about_me{
+    flex-direction: column;
+}
 } 
