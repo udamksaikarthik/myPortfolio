@@ -281,6 +281,7 @@ function sliderAnimationAboutMe(){
 }
 
 function closeAboutMe(){
+    window.location.href ='#white_container_div_about_me_animation_slide_id'
     white_container_div_about_me_animation_slide_id.classList.remove('slide_in')
     fixed_header_about_me_id.classList.remove('show')
     setTimeout(function(){
