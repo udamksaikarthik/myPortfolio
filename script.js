@@ -242,6 +242,7 @@ function CloseCross(){
 
 const black_container_div_about_me_animation_slide_id = document.getElementById('black_container_div_about_me_animation_slide_id');
 const white_container_div_about_me_animation_slide_id = document.getElementById('white_container_div_about_me_animation_slide_id')
+const fixed_header_about_me_id = document.getElementById('fixed_header_about_me_id')
 
 function sliderAnimationAboutMe(){
     window.location.href = '#body_id'
@@ -251,6 +252,7 @@ function sliderAnimationAboutMe(){
     },1000)
     setTimeout(function(){
         main_container_id.classList.add('bodyhidden')
+        fixed_header_about_me_id.classList.add('show')
     },2000)
     
     const content_container_about_me_id = document.getElementById('content_container_about_me_id')
@@ -280,6 +282,7 @@ function sliderAnimationAboutMe(){
 
 function closeAboutMe(){
     white_container_div_about_me_animation_slide_id.classList.remove('slide_in')
+    fixed_header_about_me_id.classList.remove('show')
     setTimeout(function(){
         black_container_div_about_me_animation_slide_id.classList.remove('slide_in')
     },1000)
