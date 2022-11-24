@@ -109,6 +109,11 @@ function contact(){
    },1500)
 }
 
+function aboutMe(){
+    setTimeout(function(){
+        sliderAnimationAboutMe()},1500)
+}
+
 const home_canvas_id = document.getElementById('home_canvas_id');
 const home_canvas_ctx = home_canvas_id.getContext('2d');
 const skill_canvas_id = document.getElementById('skill_canvas_id');
