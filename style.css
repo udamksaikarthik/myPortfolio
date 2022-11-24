@@ -935,7 +935,7 @@ body{
     transform: translateX(0);
 }
 .fixed_left_arrow_logo{
-    position: fixed;
+    position: absolute;
     top: 10px;
     left: 5%;
     width: 30px;
@@ -1086,6 +1086,14 @@ body{
 }
 .onscroll_animation_hidden_right_onetime a{
     border: 2px solid black;
+}
+.fixed_header_about_me{
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    top: 0;
+    left: 0;
+    background-color: white;
 }
 @media screen and (max-width: 450px) {
     .inline_menu_container{
