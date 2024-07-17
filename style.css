@@ -749,11 +749,11 @@ body{
     background-size: cover;
 }
 .project5{
-    background: url('Images/rock-paper-scissors.png');
+    background: url('Images/elemental-power.jpg');
     background-color: #2F9599;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50%;
+    background-size: 100%;
 }
 .project6{
     background: url('Images/parallax_2d_background.png');
